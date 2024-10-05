@@ -1,8 +1,8 @@
-FROM nginx:alpine
+FROM nginx:1.27.2-alpine
 
 WORKDIR  /usr/share/nginx/html
 
-COPY . .
+COPY data.txt game.js highscore.js index.html server.js style.css ./
 
 EXPOSE 80
 
